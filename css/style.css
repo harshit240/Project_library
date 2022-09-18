@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+/* Navbar CSS Start */
+#pn li{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.container-fluid{
+    padding:0;
+}
+
+
+/* Navbar CSS end */
