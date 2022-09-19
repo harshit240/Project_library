@@ -5,13 +5,47 @@
     list-style: none;
 }
 /* Navbar CSS Start */
+.navbar{
+    height: 100px;
+}
 #pn li{
-    font-size: 20px;
+    font-size: 17px;
     padding: 0 10px;
 }
-.container-fluid{
+.f{
     padding:0;
 }
-
-
+.d li a{ 
+    font-weight: 600;
+}
+.d .dropdown-divider{
+    border-bottom: 1px solid #DDDDDD;
+}
 /* Navbar CSS end */
+
+/* Banner css */
+.banner_img{
+    background: url(../images/image.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.banner_title{
+    font-size:60px; 
+    color: #ffff;
+    line-height: 520px;
+    text-align: center;
+}
+/* Subject secotion CSS */
+.hw{
+    color:#ed5a25;
+    font-size: 20px;
+}
+.subjects{
+}
+.subjects_title{
+    color: #ed5a25;
+    text-decoration: none;
+    
+}
