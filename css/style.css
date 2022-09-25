@@ -21,7 +21,11 @@
 }
 /* Navbar CSS Start */
 .navbar{
-    height: 110px;
+    height: 100px;
+}
+.mob_logo{
+    display: none;
+    /* width: 299px; */
 }
 #pn li{
     font-size: 18px;
@@ -30,8 +34,9 @@
 }
 .navbar-nav .nav-item .nav-link:hover,
 .navbar-nav .nav-item .nav-link.active{
-    color:var(--text-saphron);
-    /* transition: 1 ease-in-out; */    
+    color:#ffb200;
+    font-weight: 600;
+    transition: 0.5s;    
 }
 .f{
     padding:0;
@@ -56,22 +61,22 @@
     color: white;
 }  
 .card1{
-    background: #f9b81e; 
+    background: #4ca0b6; 
 }
 .card2{
-    background-color: #84bb45;
+    background: #eb8332;
 }
 .card3{
     background: #00adef;
 }
 .card4{
-    background: #f56363;
+    background: #fb7576;
 }
 .card5{
-    background: #b032e4;
+    background: #f9b81e;
 }
 .card6{
-    background: #43c5b9;
+    background: #37a2a7;
 }
 .card .icon{
     height: 70px;
@@ -117,7 +122,7 @@
 }
 /* Product(subject) section CSS */
 .hw{
-    color:#ed5a25;
+    color:#f9b81e;
     font-size: 16px;
 }
 .subjects a{
@@ -135,31 +140,32 @@
 .search-box input{
     height: 48px;
     font-size: 18px;
-    width: 320px;
+    /* width: 320px; */
     border-radius: 6px;
-    padding: 0 0 0 20px;
+    /* padding: 0 0 0 20px; */
     outline: 0;
 }
 .search-box button{
-    width: 150px;
+    /* width: 150px; */
     height: 48px;
     border: 0;
     border-radius: 8px;
     background-color: orange;
     color: black;
+    /* z-index: 2; */
 }
 
 .content ul li a{
     text-decoration: none;
-    color: #bf5700;
+    color: #f1b83c;
 }
 .con{
     background-color: white;
     opacity: 0.9;
-    top: 1500px;
-    left: 0;
+    position: absolute;
+    top: 360px;
     width: 100%;
-    z-index: 98;
+    /* z-index: 2; */
     padding-bottom: 15px;
 }
 h3{
@@ -196,11 +202,11 @@ input[type="submit"]:hover{
     background: #ff5722;
 }
 .footer{
-    background: var(--bg-saphron);
+    background: #f1b83c;
 }
 .block_title span{
     position: relative;
-    z-index:1 ;
+    /* z-index:1 ; */
     margin: 0 0 10px;
     padding: 0 0 10px;
 }
@@ -212,5 +218,50 @@ input[type="submit"]:hover{
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    /* z-index: 1; */
+}
+
+/* ============================================================================ */
+/* Engineering Page Section Start */
+.stream_box{
+    text-align:start;
+    position: relative;
+}
+.stream_box ul li a{
+    text-decoration: none;
+    color: #49ab03;
+    font-weight: 600;
+    font-size:22px ;
+}
+.stream_box ul li::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    content: '';
+
+}
+.stream_box ul li a:hover{
+    font-size: 24px;
+    transition: 0.6s;
+    color: #ed5a25;
+}
+/* =================================================================================== */
+/* Registration Page CSS */
+.enter_name{
+    background: white!important;
+    width: 100%!important;
+    border-radius: 25px!important;
+}
+.submit{
+    border-radius:30px;
+    padding:10px 25px;
+    border: 0;
+    color: white;
+    background: orange;
+}
+.submit:hover{
+    font-size: 20px;
+    transition: 0.5s;
+    border: 1px solid;
+    color: #ed5a25;
 }
