@@ -9,7 +9,7 @@
     --bg-danger:#f63440;
     --bg-white:#fff;
     --bg-light-white:#f5f5f5;
-
+    --bg-saphron:#ed5a25;
     /* Text Color */
     --primary-font:"Poppins", sans-serif;
     --text-white:#fff;
@@ -44,6 +44,63 @@
 }
 /* Navbar CSS end */
 
+/* Card CSS Start */
+.card{
+    border: 0;
+    outline: 0;
+    -webkit-box-shadow: 10px 10px 22px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px -12px rgba(0,0,0,0.75);
+    border-radius: 1px;
+    background: #f9b81e; 
+    color: white;
+}  
+.card1{
+    background: #f9b81e; 
+}
+.card2{
+    background-color: #84bb45;
+}
+.card3{
+    background: #00adef;
+}
+.card4{
+    background: #f56363;
+}
+.card5{
+    background: #b032e4;
+}
+.card6{
+    background: #43c5b9;
+}
+.card .icon{
+    height: 70px;
+    width: 70px;
+    background: transparent;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+.card:hover{
+    background-color: white;
+    transition: 0.8s;
+    color: black;
+}
+.card:hover .icon{
+    background-color: greenyellow;
+    color: white;
+    transition: 0.8s;
+}
+.view_selection{
+    text-decoration: none;
+    color: white;
+}
+/* Card CSS End */
+
+
 /* Banner css */
 .banner_img{
     background: url(../images/image.jpg);
@@ -67,22 +124,11 @@
     color: #ed5a25;
     text-decoration: none;
 }
-/* Footer CSS start*/
-.social-icons{
-	display: inline-block;
-	font-size: 30px;
-}
-.social-icons a{
-	color: #ffad00;
-}
-.copyright_text{
-	font-size: 13px;
-}
 /* Search a book setion CSS */
 .search_book_banner{
     background: url(../images/library_banner.JPG);
     width: 100%;
-    height: 700px;
+    height: 750px;
     background-size: cover;
     /* background-attachment: fixed; */
 }
@@ -110,10 +156,61 @@
 .con{
     background-color: white;
     opacity: 0.9;
-    position: absolute;
-    top: 1250px;
+    top: 1500px;
     left: 0;
     width: 100%;
     z-index: 98;
     padding-bottom: 15px;
+}
+h3{
+    font-size: 24px;
+}
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+input[type="text"]{
+    background: white;
+    width: 380px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+input[type="submit"]{
+    position: relative;
+    border-radius: 0 25px 25px 0;
+    left: -5px;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #ffc107;
+    color: #ffff;
+}
+input[type="submit"]:hover{
+    background: #ff5722;
+}
+.footer{
+    background: var(--bg-saphron);
+}
+.block_title span{
+    position: relative;
+    z-index:1 ;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+}
+.block_title span::after{
+    content: '';
+    width: 80px;
+    height: 1px;
+    background: #ffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
