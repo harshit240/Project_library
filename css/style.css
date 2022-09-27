@@ -19,6 +19,7 @@
     --text-dark-gray:#777;
     --text-saphron:#ed5a25;
 }
+/* ======================================================= */
 /* Scroll-bar CSS Start */
 body::-webkit-scrollbar{
     width: 12px;
@@ -40,6 +41,7 @@ body::-webkit-scrollbar-corner{
 }
 
 /* Scroll-bar CSS End */
+/* =========================================================== */
 /* Navbar CSS Start */
 .navbar{
     height: 100px;
@@ -242,7 +244,7 @@ input[type="submit"]:hover{
     /* z-index: 1; */
 }
 
-/* ============================================================================ */
+/* ================================================================================ */
 /* Engineering Page Section Start */
 .stream_box{
     text-align:start;
