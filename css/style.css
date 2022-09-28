@@ -52,7 +52,7 @@ body::-webkit-scrollbar-corner{
 }
 #pn li{
     font-size: 18px;
-    padding: 0 10px;
+    padding: 0 18px;
     margin-left: 5px;
 }
 .navbar-nav .nav-item .nav-link:hover,
@@ -290,27 +290,81 @@ input[type="submit"]:hover{
 }
 /* ====================================================================================== */
 /* E-Books Page CSS start */
-.book_store{
-    position: relative;
-    top: 0%;
-}
-.book_store a img:hover{
-    opacity: 0.8;
-    color:blacks;
-    background-color: #121212;
-}
-.book_icons{
-    position: absolute;
-    left: 26%;
+.e_book_page_title{
     text-align: center;
-    top: 79%;
-    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ed5a25;
+    padding-bottom: 10px;
 }
-.book_store .book_icons i{
-    padding: 10px 20px;
-    color: #ffff;
-    display: none;
+.e_book_page_title::after{
+    content: "";
+    background: #ed5a25;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
 }
-.book_store .book_icons i:hover{
+.book_container{
+    margin-top: 25px;
+}
+.book_container .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.book_container .book_name{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.book_container .author_name{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.img-box::after{
+    content: '';
+    opacity: 0;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.img-box ul{
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    margin: 3px;
+    border-radius: 15px;
     display: inline-block;
+}
+.img-box a{
+    color: #ffff;
+}
+.img-box:hover::after{
+    opacity: 1;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box a:hover li{
+    color:#fff;
+    border: 1px solid #007bff;
+}
+.img-box::after, .img-box ul, .img-box ul li{
+    transition: all 0.5s ease-in-out 0s;
 }
