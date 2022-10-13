@@ -12,7 +12,7 @@
         margin-top: 50px;
     }
 }
-@media(max-width: 768px){
+@media(max-width: 780px){
     .search-box input{
         height: 48px;
         font-size: 18px;
@@ -25,5 +25,8 @@
         border-radius: 8px;
         background-color: orange;
         color: black;
+    }
+    .footer{
+        margin-top: 275px;
     }
 }

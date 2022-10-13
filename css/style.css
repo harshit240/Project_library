@@ -224,6 +224,9 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background: #ff5722;
 }
+/* ====================================================================================================== */
+/* Footer section css start */
+
 .footer{
     background: #f1b83c;
 }
